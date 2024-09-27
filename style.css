@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.animação {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    flex-wrap: wrap; /* Para que os quadrados quebrem para a próxima linha se não houver espaço */
+}
+
+.animação div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white; /* Para ícones */
+    margin: 10px;
+    width: 100px;  /* Defina um tamanho fixo para os quadrados */
+    height: 100px; /* Defina um tamanho fixo para os quadrados */
+    color: #000;
+    border-radius: 20px;
+}
+
+.animação div:hover{
+    animation: nome 1s infinite;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.quadrado-preto { background-color: rgb(73, 73, 73); 
+    color: black;
+}
+.quadrado-branco { background-color: white; color: black; }
+.quadrado-vermelho { background-color: rgb(255, 88, 227); }
+.quadrado-verde { background-color: rgb(111, 248, 111); }
+.quadrado-azul { background-color: rgb(90, 90, 255); }
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-bottom: 4px solid #007aff;
+}
+
+.inicio{
+    font-size: 48px;
+    font-family: 'Noto Serif', sans-serif;
+}
+
+header img {
+    max-width: 60%;
+    height: auto;
+    padding: 30px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 0.1em 0.1em purple;
+}
+
+td, th {
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+table {
+    width: 50%;
+    margin-bottom: 50px;
+    table-layout: fixed;
+}
+
+.recursos {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #e1bee7;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex: 0 1 25%; /* Flex-grow, flex-shrink, flex-basis */
+}
+
+.card h3 {
+    color: #6a1b9a;
+}
+
+.preço {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    border-top: 3px dashed #d32f2f;
+}
+
+.preço a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    background-color: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #000;
+    color: white;
+}
+
+footer i {
+    margin: 0 10px;
+    color: white;
+}
+
+@keyframes nome {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+        border-radius: 5px;
+    }
+}
