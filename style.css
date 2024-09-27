@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 100px;
-    flex-wrap: wrap; /* Para que os quadrados quebrem para a próxima linha se não houver espaço */
+    flex-wrap: wrap;
 }
 
 .animação div {
@@ -13,10 +13,10 @@
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    color: white; /* Para ícones */
+    color: white;
     margin: 10px;
-    width: 100px;  /* Defina um tamanho fixo para os quadrados */
-    height: 100px; /* Defina um tamanho fixo para os quadrados */
+    width: 100px;
+    height: 100px
     color: #000;
     border-radius: 20px;
 }
@@ -92,7 +92,7 @@ table {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    flex: 0 1 25%; /* Flex-grow, flex-shrink, flex-basis */
+    flex: 0 1 25%;
 }
 
 .card h3 {
