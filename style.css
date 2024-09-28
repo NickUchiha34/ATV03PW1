@@ -116,7 +116,8 @@ td, th {
 }
 
 table {
-    width: 50%;
+    width: 100%;
+    overflow-x: auto;
     margin-bottom: 50px;
     table-layout: fixed;
 }
