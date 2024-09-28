@@ -48,6 +48,30 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+    .animação div {
+        width: 80px;
+        height: 80px;
+        font-size: 18px;
+    }
+
+    .card {
+        flex: 0 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .animação div {
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .card {
+        flex: 0 1 100%;
+    }
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
